@@ -4,73 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale comigo diretamente!</title>
+    <title>Davi Gonçalves</title>
 
     <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
-    <div id="about-container">
-        <h3>Sobre mim</h3>
-        <p>
-            Eu me chamo Davi Gonçalves, nasci em janeiro de 2005 e moro na cidade de Sorocaba. Técnico em Adminstração pela ETEC Fernando Prestes e no último semestre da faculdade de Análise e Desenvolvimento de Sistemas na Universidade Paulista - UNIP. <br><br>
-            Desenvolvedor Python Back-End especializado na criação de soluções para desktop/computador, com experiência em áreas como: Inteligência artificial, automação de processos, análise de dados, desenvolvimento de bots e criação de assistentes virtuais.<br>
-        </p>
+    <div class= "container" id="about-container">
+        <h2 class="session-title">
+            Um pouco sobre mim
+        </h2>
+        <p id="about-description">
+            Eu me chamo Davi Gonçalves, nasci em janeiro de 2005 e moro na cidade de Sorocaba. 
+            Tenho formação técnica em Adminstração de Empresas pela ETEC Fernando Prestes e atualmente no último semestre da faculdade de Análise e Desenvolvimento de Sistemas na Universidade Paulista - UNIP.<br><br>
+
+            Desenvolvedor Python Back-End, especializado na criação de soluções para computadores, com experiência em áreas como: 
+            Inteligência artificial, automação de processos, análise de dados, desenvolvimento de bots e criação de assistentes virtuais.<br><br>
+
+            Também tenho experiência com logística em áreas como: Controle de estoque, expedição de pedidos, separação de produtos e conferência de notas fiscais!<br><br>
+
+            Agora vem a melhor parte, posso te contar um segredo? Estou aberto a trabalhos como freelancer! Ou seja, gostou de alguma ideia e quer trabalhar comigo? Só me chamar em qualquer uma das minhas redes!
+        </p><br>
     </div>
 
 
-    <div id="projects-container">
-        <div class="project" id="chatbot-card">
-            <h3>Chatbot offline com IA personalizável</h3>
-            <p>Chatbot que funciona 100% offline, com possibilidade de gerenciamento dos modelos utilizados, o modelo se lembra da conversa e responde as perguntas utilizando esses dados, contando também com uma interface amigável.</p>
-            <a href="https://github.com/DaviGMCoelho/ChatBot" target="_blank">
-                Venha conferir o projeto aqui!<br>
-            </a>
-        </div>
+    <div class= "container" id="projects-container">
+        <h2 class="session-title">
+            Alguns dos meus projetos
+        </h2>
+        <div class="project-row" id="project-row-1">
+            <div class="project" id="chatbot-card">
+                <div class="content">
+                    <h3>
+                        Chatbot offline com IA
+                    </h3>
+                    <p class="project-description">
+                        Criado para garantir a privacidade e transparência que você merece! Tudo acontece única e exclusivamente no seu computador,
+                        nada de ligações externas ou letras pequenas! Você é o dono dos seus dados e sabe onde e como vão ser usados.<br><br>
 
-        <div class="project" id="pdf-reader-card">
-            <h3>Leitor de PDF com RAG e IA</h3>
-            <p>Um leitor de PDF que utiliza um modelo de IA para responder perguntas relacionadas aos arquivos, combinando ChromaDB para categorização dos conteúdos e uma IA para gerar as respostas com base nisso. Você consegue buscar informações apenas perguntando.</p>
-            <a href="https://github.com/DaviGMCoelho/pdf-rag-ia" target="_blank">
-                Venha conferir o projeto aqui!<br>
-            </a>
-        </div>
+                        Esse é um chatbot que funciona de forma totalmente offline, possibilitando o gerenciamento dos seus modelos.
+                        Contém memória persistente através de um banco de dados local, alimentando a geração de respostas, 
+                        o chatbot conta com uma interface gráfica e suporte vários usuários mas não de forma simultânea.<br>
+                    </p>
+                    <a href="https://github.com/DaviGMCoelho/ChatBot" target="_blank">
+                        Entre aqui e veja o código no Github!
+                    </a><br><br>
+                </div>
+                <div class="image">
+                    <img class="img-project" src="images/icons/chatbot_icon.png" alt="chatbot-icon.png">
+                </div>
+            </div>
 
-        <div class="project" id="assistant-card">
-            <h3>Assistente Virtual</h3>
-            <p>Uma assistente virtual controlada por voz, com funcionalidades criar arquivos de texto, pastas e arquivos python, abrir programas e sites, gerar textos utilizando um modelo de IA e dizer as horas.</p>
-            <a href="https://github.com/DaviGMCoelho/Assistente-Virtual" target="_blank">
-                Venha conferir o projeto aqui!<br>
-            </a>
+            <div class="project" id="pdf-reader-card">
+                <div class="content">
+                    <h3>
+                        Leitor de PDF com RAG e IA
+                    </h3>
+                    <p class="project-description">
+                        Já teve que ler um arquivo PDF imenso? ou pior, já preciso ler vários arquivos assim? Deixa eu te fazer uma pergunta... já pensou em só perguntar para eles?
+                        Calma! Eu sei, meio bizarro, mas esse carinha aqui faz justamente isso!<br><br>
+                        
+                        Ele busca a informação que você precisa dentro dos seus arquivos, é o seu Google pessoal!
+                        Todos seus arquivos a uma pergunta de distância! É "arquivos" mesmo, você pode carregar quantos arquivos quiser.
+                        Eu combinei ChromaDB local para armazenar os dados dos arquivos e uma IA para gerar as respostas.<br>
+                    </p>
+                    <a href="https://github.com/DaviGMCoelho/pdf-rag-ia" target="_blank">
+                        Entre aqui e veja o código no Github!
+                    </a><br><br>
+                </div>
+                <div class="image">
+                    <img class="img-project" src="images/icons/pdf_reader_icon.png" alt="pdf-reader-icon.png">
+                </div>
+            </div>
+
+            <div class="project" id="virtual-assistant-card">
+                <div class="content">
+                    <h3>
+                        ALICE - Assistente Virtual com IA
+                    </h3>
+                    <p class="project-description">
+                        Já pensou em controlar seu computador igual o Tony Stark controla seu traje ou ter uma secretária que trabalha todo dia para você?
+                        Eu já... e criei exatamente isso! A Alice é uma assistente virtual controlada por voz, suas principais funções são: 
+                        Criar arquivos e pastas, abrir programas e sites, dizer as horas e gerar textos usando um modelo de IA da sua escolha.<br><br>
+                    
+                        Funções futuras: Criação de comandos personalizados, integração de um banco de dados, gerenciamento de compromissos,
+                        envio de mensagens e lembretes.
+                        
+                    </p>
+                    <a href="https://github.com/DaviGMCoelho/Assistente-Virtual" target="_blank">
+                        Entre aqui e veja o código no Github!
+                    </a><br><br>
+                </div>
+                <div class="image">
+                    <img class="img-project" src="images/icons/virtual_assistant_icon.png" alt="github-icon.png">
+                </div>
+            </div>
+
+            <h3>
+                Se interessou e quer ver todos os meus projetos?<br>
+                
+                Esse é o meu Github:
+                <a href="https://github.com/DaviGMCoelho" target="_blank">
+                        DaviGMCoelho
+                </a><br>
+                Esse é o meu canal do youtube:
+                <a href="https://www.youtube.com/@PyLab1" target="_blank">
+                        PyLab
+                </a><br><br>
+                Garanto que vai gostar do que vai ver, te espero lá!
+            </h2>
         </div>
     </div>
 
 
-    <div id="contact-container">
-        <h3>Contato</h1>
+    <div class= "container" id="contact-container">
+        <h2 class="session-title">
+            Contato
+        </h2>
         <p>
-            Quer trabalhar comigo, tirar uma dúvida ou se interessou pelos meus projetos?<br>
+            Quer trabalhar comigo ou se interessou pelos meus projetos?<br>
             Você consegue me encontrar em TODOS esses lugares!
         </p>
 
         <div class="contact-row" id="contact-row-1">
             <div class="contact" id="github-card">
-                <p>GitHub</p>
+                <h3>
+                    GitHub
+                </h3>
                 <a href="https://github.com/DaviGMCoelho" target="_blank">
-                    <img src="images/icons/github_icon_512x512.png" alt="github-icon.png" width="50" height="50"><br>
+                    <img src="images/icons/github_icon_512x512.png" alt="github-icon.png" width="50" height="50">
                 </a>
             </div>
 
             <div class="contact" id="youtube-card">
-                <p>YouTube</p>
+                <h3>
+                    YouTube
+                </h3>
                 <a href="https://www.youtube.com/@PyLab1" target="_blank">
                     <img src="images/icons/youtube_icon_512x512.png" alt="youtube-icon.png" width="40" height="40">
                 </a>
             </div>
 
             <div class="contact" id="whatsapp-card">
-                <p>WhatsApp</p>
+                <h3>
+                    WhatsApp
+                </h3>
                 <a href="https://www.whatsapp.com" target="_blank">
                     <img src="images/icons/whatsapp_icon_512x512.png" alt="whatsapp-icon.png" width="40" height="40">
                 </a>
@@ -79,21 +158,27 @@
 
         <div class="contact-row" id="contact-row-2">
             <div class="contact" id="linkedin-card">
-                <p>LinkedIn</p>
+                <h3>
+                    LinkedIn
+                </h3>
                 <a href="https://www.linkedin.com/in/DaviGMCoelho" target="_blank">
                     <img src="images/icons/linkedin_icon_512x512.png" alt="linkedin-icon.png" width="40" height="40">
                 </a>
             </div>
 
             <div class="contact" id="instagram-card">
-                <p>Instagram</p>
+                <h3>
+                    Instagram
+                </h3>
                 <a href="https://www.instagram.com/techwithdavi/" target="_blank">
                     <img src="images/icons/instagram_icon_512x512.png" alt="github-icon.png" width="40" height="40">
                 </a>
             </div>
 
             <div class="contact" id="linktree-card">
-                <p>Linktree</p>
+                <h3>
+                    Linktree
+                </h3>
                 <a href="https://linktr.ee/goncalvesdavi" target="_blank">
                     <img src="images/icons/linktree_icon_512x512.png" alt="github-icon.png" width="40" height="40"><br>
                 </a>
